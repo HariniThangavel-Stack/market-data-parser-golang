@@ -3,7 +3,7 @@ package parser
 import (
 	"testing"
 
-	"market-data-parser-golang/model"
+	"github.com/HariniThangavel-Stack/market-data-parser-golang/model"
 )
 
 // incomplete test

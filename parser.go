@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"market-data-parser-golang/model"
-	"market-data-parser-golang/utility"
+	"github.com/HariniThangavel-Stack/market-data-parser-golang/model"
+	"github.com/HariniThangavel-Stack/market-data-parser-golang/utility"
 	"github.com/joho/godotenv"
 )
 

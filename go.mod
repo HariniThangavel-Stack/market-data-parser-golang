@@ -1,4 +1,4 @@
-module market-data-parser-golang
+module github.com/HariniThangavel-Stack/market-data-parser-golang
 
 go 1.21.1
 

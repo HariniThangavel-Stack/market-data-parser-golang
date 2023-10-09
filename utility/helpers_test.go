@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"market-data-parser-golang/model"
+	"github.com/HariniThangavel-Stack/market-data-parser-golang/model"
 )
 
 func TestIndexOf(t *testing.T) {

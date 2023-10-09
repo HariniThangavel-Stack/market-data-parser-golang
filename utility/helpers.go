@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"market-data-parser-golang/model"
+	"github.com/HariniThangavel-Stack/market-data-parser-golang/model"
 )
 
 // Find given value and return its index from array
