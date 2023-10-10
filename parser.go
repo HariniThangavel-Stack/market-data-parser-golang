@@ -17,7 +17,7 @@ func init() {
 	godotenv.Load()
 }
 
-func MarketDataParser(options model.Options) {
+func MarketDataParser(options model.Options) interface{} {
 	var inputFileObj model.InputFileObj
 	var requiredFormat string
 	if (model.Options{}) != options && options.FilePath != "" && options.OutputFormat != "" {
@@ -54,11 +54,14 @@ func MarketDataParser(options model.Options) {
 				bytes, _ := json.Marshal(x)
 				temp := json.RawMessage(bytes)
 				fmt.Printf("JSON returned successfully %#v \n", string(temp))
+				return string(temp)
 			}
 		}
 	} else {
 		fmt.Println("File path and output format is required")
+		return "File path and output format is required"
 	}
+	return "Done"
 }
 
 func readFile(inputFileObj model.InputFileObj, fileContent chan string, done chan struct{}) {
